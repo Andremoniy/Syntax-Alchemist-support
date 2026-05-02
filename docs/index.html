@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Syntax Alchemist — Support</title>
+  <meta name="description" content="Support page for Syntax Alchemist, a tree-based logic puzzle game for iPhone and iPad.">
+  <style>
+    :root {
+      --bg: #100d18;
+      --panel: #1b1627;
+      --panel-2: #251f35;
+      --text: #f5f0ff;
+      --muted: #c8bddc;
+      --accent: #d8b35a;
+      --accent-2: #9dd6c8;
+      --border: rgba(255, 255, 255, 0.12);
+      --shadow: rgba(0, 0, 0, 0.35);
+      --max-width: 980px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(216, 179, 90, 0.18), transparent 34rem),
+        radial-gradient(circle at top right, rgba(157, 214, 200, 0.14), transparent 30rem),
+        var(--bg);
+    }
+
+    a {
+      color: var(--accent-2);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      padding: 4rem 1.25rem 2rem;
+    }
+
+    .hero,
+    main,
+    footer {
+      width: min(100%, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .hero-card {
+      padding: 2rem;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: linear-gradient(135deg, rgba(37, 31, 53, 0.96), rgba(27, 22, 39, 0.96));
+      box-shadow: 0 24px 80px var(--shadow);
+    }
+
+    .app-mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 68px;
+      height: 68px;
+      margin-bottom: 1rem;
+      border-radius: 22px;
+      background: linear-gradient(135deg, var(--accent), #815f20);
+      color: #18111f;
+      font-size: 2.2rem;
+      font-weight: 800;
+      box-shadow: 0 16px 35px rgba(216, 179, 90, 0.2);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.2rem, 8vw, 4.5rem);
+      line-height: 1.02;
+      letter-spacing: -0.05em;
+    }
+
+    .subtitle {
+      max-width: 720px;
+      margin: 1rem 0 0;
+      color: var(--muted);
+      font-size: 1.15rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1.6rem;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0.72rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .button.primary {
+      border-color: transparent;
+      background: var(--accent);
+      color: #18111f;
+    }
+
+    main {
+      padding: 0 1.25rem 3rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 1rem;
+    }
+
+    section {
+      margin-top: 1rem;
+      padding: 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: rgba(27, 22, 39, 0.82);
+      box-shadow: 0 14px 50px rgba(0, 0, 0, 0.18);
+    }
+
+    .wide {
+      grid-column: span 12;
+    }
+
+    .half {
+      grid-column: span 6;
+    }
+
+    h2 {
+      margin: 0 0 0.8rem;
+      font-size: 1.55rem;
+      letter-spacing: -0.02em;
+    }
+
+    h3 {
+      margin: 1.1rem 0 0.35rem;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 0.4rem 0;
+    }
+
+    ul {
+      margin: 0.6rem 0 0;
+      padding-left: 1.2rem;
+    }
+
+    li + li {
+      margin-top: 0.35rem;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .note {
+      margin-top: 1rem;
+      padding: 1rem;
+      border: 1px solid rgba(216, 179, 90, 0.28);
+      border-radius: 18px;
+      background: rgba(216, 179, 90, 0.09);
+      color: #f7e7bf;
+    }
+
+    .faq-item {
+      padding: 1rem 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .faq-item:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    footer {
+      padding: 1.5rem 1.25rem 3rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .footer-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem 1.2rem;
+      justify-content: space-between;
+      border-top: 1px solid var(--border);
+      padding-top: 1.2rem;
+    }
+
+    code {
+      padding: 0.12rem 0.35rem;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      color: #ffe1a1;
+    }
+
+    @media (max-width: 760px) {
+      header {
+        padding-top: 2rem;
+      }
+
+      .hero-card,
+      section {
+        border-radius: 20px;
+      }
+
+      .half {
+        grid-column: span 12;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!--
+    Replace these placeholders before publishing:
+    1. your-email@example.com
+    2. https://apps.apple.com/app/idYOUR_APP_ID
+    3. https://example.com/privacy
+  -->
+
+  <header>
+    <div class="hero">
+      <div class="hero-card">
+        <h1>Syntax Alchemist Support</h1>
+        <p class="subtitle">
+          Help, troubleshooting, and contact information for Syntax Alchemist —
+          a tree-based logic puzzle game about rules, reactions, and transformation.
+        </p>
+
+        <div class="actions">
+          <a class="button primary" href="mailto:andremoniy@gmail.com?subject=Syntax%20Alchemist%20Support">Contact Support</a>
+          <a class="button" href="#faq">Read FAQ</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="grid">
+      <section class="wide" aria-labelledby="about">
+        <h2 id="about">About the app</h2>
+        <p>
+          Syntax Alchemist is a logic puzzle game where you rewrite syntax trees by applying reactions.
+          Each level gives you a starting tree, a set of available rules, and a target result.
+        </p>
+        <p>
+          The challenge is to find the right sequence of transformations while handling special nodes,
+          obstacles, limited moves, and optional bonuses.
+        </p>
+      </section>
+
+      <section class="half" aria-labelledby="help-credits">
+        <h2 id="help-credits">Help credits</h2>
+        <p>
+          If you get stuck, you can use help credits to reveal the next move.
+          A small number of help credits is available at the beginning.
+        </p>
+        <p>
+          More help credits can be purchased as optional in-app purchases.
+          You can continue playing without buying credits, but hints may be limited.
+        </p>
+        <div class="note">
+          Help credits are consumable items. Used credits cannot be restored after they have been spent.
+        </div>
+      </section>
+
+      <section class="half" aria-labelledby="troubleshooting">
+        <h2 id="troubleshooting">Purchase troubleshooting</h2>
+        <ul>
+          <li>Make sure you are signed in with the same Apple ID used for the purchase.</li>
+          <li>Check that your internet connection is active.</li>
+          <li>Close and reopen the app after a completed purchase.</li>
+          <li>If a purchase was charged but credits did not appear, contact support with the approximate purchase time.</li>
+        </ul>
+      </section>
+
+      <section class="wide" id="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">FAQ</h2>
+
+        <div class="faq-item">
+          <h3>What is the goal of each level?</h3>
+          <p>
+            Each level asks you to transform the starting tree into the required target.
+            Some levels require an exact final tree, while others introduce special conditions.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What are reactions?</h3>
+          <p>
+            Reactions are rewrite rules. Applying a reaction changes part of the current tree and moves you closer
+            to, or sometimes further from, the solution.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I play without hints?</h3>
+          <p>
+            Yes. Hints are optional. They are there only to help when a puzzle becomes too difficult.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I restore purchased help credits?</h3>
+          <p>
+            Help credits are consumable in-app purchases. Credits that have already been used cannot be restored.
+            If a completed purchase did not add credits to your balance, contact support.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>The app is not working correctly. What should I send?</h3>
+          <p>
+            Please include your device model, iOS version, app version, a short description of the problem,
+            and screenshots if they help explain the issue.
+          </p>
+        </div>
+      </section>
+
+      <section class="half" aria-labelledby="privacy">
+        <h2 id="privacy">Privacy</h2>
+        <p>
+          Syntax Alchemist does not require an account to play.
+          Gameplay progress and help credit balance are stored locally on your device.
+        </p>
+        <p>
+          For more details, read the app privacy policy:
+          <a href="https://andremoniy.github.io/Syntax-Alchemist-support/privacy">Privacy Policy</a>.
+        </p>
+      </section>
+
+      <section class="half" aria-labelledby="contact">
+        <h2 id="contact">Contact</h2>
+        <p>
+          For support requests, purchase issues, or bug reports, email:
+        </p>
+        <p>
+          <a href="mailto:andremoniy@gmail.com?subject=Syntax%20Alchemist%20Support"><strong>andremoniy@gmail.com</strong></a>
+        </p>
+        <p class="muted">
+          Please mention <code>Syntax Alchemist</code> in the subject line.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-row">
+      <span>© 2026 Syntax Alchemist. All rights reserved.</span>
+      <span>Last updated: 2 May 2026</span>
+    </div>
+  </footer>
+</body>
+</html>
